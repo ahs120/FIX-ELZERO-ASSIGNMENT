@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <style>
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+      }
+      input,
+      select {
+        padding: 15px;
+        outline: none;
+        border: 1px solid #e9e9e9;
+      }
+
+      select {
+      }
+      input[type="submit"] {
+        background-color: tomato;
+        color: #fff;
+      }
+      .results {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 30px;
+      }
+      .results .box {
+        color: #fff;
+        padding: 15px;
+        width: calc((100% / 3) - 50px);
+        text-align: center;
+      }
+      .results div.box {
+        background-color: tomato;
+      }
+      .results section.box {
+        background-color: aqua;
+      }
+    </style>
+    <form action="">
+      <input
+        type="number"
+        name="elements"
+        class="input"
+        placeholder="Number Of Elements"
+      />
+      <input
+        type="text"
+        name="texts"
+        class="input"
+        placeholder="Elements Text"
+      />
+      <select name="type" class="input">
+        <option value="Div">Div</option>
+        <option value="Section">Section</option>
+      </select>
+      <input type="submit" name="create" value="Create" />
+      <div class="results">
+        <div class="box" title="Element" id="id-3">Hello</div>
+      </div>
+    </form>
+    <script src="app.js"></script>
+  </body>
+</html>
