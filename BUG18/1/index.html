@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Learn JavaScript</title>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll("a").forEach((link) => {
+          if (
+            link.classList.contains("open") &&
+            link.textContent === "Elzero"
+          ) {
+            link.click();
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <a class="open" href="https://google.com" target="_blank">Google</a>
+    <a class="open" href="https://elzero.org">Elzero</a>
+    <a class="not" href="https://facebook.com">Facebook</a>
+    <a class="linked" href="https://linkedin.com">Elzero</a>
+    <script src="main.js"></script>
+  </body>
+</html>
