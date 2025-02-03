@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -43,3 +44,108 @@
     <script src="app.js"></script>
   </body>
 </html>
+=======
+<!DOCTYPE html>
+<<<<<<< HEAD
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Popup Task</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 50px;
+      }
+      .popup {
+        position: fixed;
+        bottom: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+        background: white;
+        border: 1px solid #ccc;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        display: none;
+      }
+      .close-btn {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        background: red;
+        color: white;
+        border: none;
+        cursor: pointer;
+        padding: 5px;
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      function showPopup() {
+        // إنشاء عنصر الـ Popup
+        let popup = document.createElement("div");
+        popup.className = "popup";
+        popup.innerHTML = `
+            <button class="close-btn" onclick="this.parentElement.remove()">×</button>
+            <h2>Welcome</h2>
+            <p>Welcome To Elzero Web School</p>
+        `;
+
+        // إضافة Popup إلى الصفحة
+        document.body.appendChild(popup);
+        popup.style.display = "block";
+      }
+
+      // تشغيل الدالة بعد 5 ثوانٍ
+      setTimeout(showPopup, 5000);
+    </script>
+=======
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .popup {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #e9e9e9;
+      width: 400px;
+      height: 400px;
+      text-align: center;
+      padding: 30px;
+      & > div {
+        position: relative;
+        & .holder {
+          position: relative;
+          & span {
+            background-color: tomato;
+            color: #fff;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 22px;
+            position: absolute;
+            right: -10px;
+            top: -20px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  </style>
+  <body>
+    <script src="app.js"></script>
+>>>>>>> 6cc60ca (bom)
+  </body>
+</html>
+>>>>>>> 8d269de0f99474c76781db8274df4f10dff208b9

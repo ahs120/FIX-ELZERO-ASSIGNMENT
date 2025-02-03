@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -15,3 +16,63 @@
     <script src="app.js"></script>
   </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<<<<<<< HEAD
+    <title>Print Numbers</title>
+  </head>
+  <body>
+    <h2>Print numbers from start to end with step:</h2>
+    <label for="start">Start:</label>
+    <input type="number" id="start" />
+    <label for="end">End:</label>
+    <input type="number" id="end" />
+    <label for="step">Step:</label>
+    <input type="number" id="step" value="1" />
+    <button onclick="printNumbers()">Print</button>
+
+    <div id="output"></div>
+
+    <script>
+      function printNumbers() {
+        let start = parseInt(document.getElementById("start").value);
+        let end = parseInt(document.getElementById("end").value);
+        let step = parseInt(document.getElementById("step").value);
+
+        if (isNaN(start) || isNaN(end) || isNaN(step) || step <= 0) {
+          alert(
+            "Please enter valid numbers, and ensure the step is greater than zero."
+          );
+          return;
+        }
+
+        let min = Math.min(start, end);
+        let max = Math.max(start, end);
+
+        let outputDiv = document.getElementById("output");
+        outputDiv.innerHTML = "";
+
+        for (let i = min; i <= max; i += step) {
+          outputDiv.innerHTML += `<p>${i}</p>`;
+        }
+      }
+    </script>
+=======
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="number" start placeholder="Start " />
+    <input type="number" end placeholder="End" />
+    <input type="number" jump placeholder="Jump" />
+
+    <button click>get resale</button>
+    <div class="re"></div>
+    <script src="app.js"></script>
+>>>>>>> 6cc60ca (bom)
+  </body>
+</html>
+>>>>>>> 8d269de0f99474c76781db8274df4f10dff208b9
