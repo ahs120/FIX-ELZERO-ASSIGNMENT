@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change Fonts, Colors, and Sizes</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Cairo&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="text">This is a sample text</h1>
+
+      <label for="font-select">Choose Font:</label>
+      <select id="font-select">
+        <option value="Open Sans">Open Sans</option>
+        <option value="Cairo">Cairo</option>
+        <option value="Roboto">Roboto</option>
+      </select>
+
+      <label for="color-select">Choose Color:</label>
+      <select id="color-select">
+        <option value="#000000">Black</option>
+        <option value="#FF0000">Red</option>
+        <option value="#00FF00">Green</option>
+        <option value="#0000FF">Blue</option>
+        <option value="#FFFF00">Yellow</option>
+        <option value="#FF00FF">Pink</option>
+      </select>
+
+      <label for="size-select">Choose Font Size:</label>
+      <select id="size-select">
+        <option value="16px">16px</option>
+        <option value="18px">18px</option>
+        <option value="20px">20px</option>
+        <option value="22px">22px</option>
+        <option value="24px">24px</option>
+        <option value="26px">26px</option>
+        <option value="28px">28px</option>
+        <option value="30px">30px</option>
+        <option value="40px">40px</option>
+        <option value="50px">50px</option>
+        <option value="60px">60px</option>
+        <option value="70px">70px</option>
+      </select>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
